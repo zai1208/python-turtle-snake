@@ -1,7 +1,9 @@
 import turtle
 
 screen = turtle.Screen()
-head = turtle.Turtle
+head = turtle.Turtle()
+head.shape("square")
+head.color("red")
 
 screen.listen()
 
@@ -21,3 +23,5 @@ screen.onkey(up, "Up")
 screen.onkey(down, "Down")
 screen.onkey(left, "Left")
 screen.onkey(right, "Right")
+
+screen.mainloop()
