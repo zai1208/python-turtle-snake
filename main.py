@@ -18,4 +18,6 @@ head.setheading(direction)
 head.forward(20)
 
 screen.onkey(up, "Up")
-screen.onkey
+screen.onkey(down, "Down")
+screen.onkey(left, "Left")
+screen.onkey(right, "Right")
