@@ -12,6 +12,10 @@ food.goto(random.randrange(0, 500, 20), random.randrange(0, 500, 20))
 
 screen.listen()
 
+segments = {}
+segment = 0
+
+
 def up():
     direction = 90
 def down():
@@ -25,7 +29,8 @@ head.setheading(direction)
 head.forward(20)
 for i in range(segment):
 	if segment - 1 == i:
-		exec('"' + str(i) + '" = turtle.Turtle()')
+		exec('segments[' + str(i) + '] = turtle.Turtle()')
+	segments[str(i).goto(segements[str(i - 1).pos()[0] - 20], segments[str(i - 1)).
 
 if head.pos() == food.pos():
 	food.goto(random.randrange(0, 500, 20), random.randrange(0, 500, 20))
